@@ -24,10 +24,10 @@ const Hero=()=> {
           className='text-center
           text-[40px]
           md:text-5xl lg:text-6xl'
-          words='I am a Full Stack Developer'
+          words='I am a Full Stack Developer with experience in building web applications using modern technologies'
           />
           <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-            I am a Full Stack Developer with experience in building web applications using modern technologies  
+            Connect With me
           </p>
           <a href='#about'>
             <MagicButton

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
-import { FloatingNav } from "./components/ui/FloatingNavbar";
+import Hero from "../components/Hero";
+import { FloatingNav } from "../components/ui/FloatingNavbar";
+import {FaHome} from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -8,7 +9,10 @@ export default function Home() {
     overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <Hero />
-        <FloatingNav navItems={navItems} />
+        <FloatingNav navItems={[
+          {name: 'Home', link:'/',icon:<FaHome/>},
+          {name: 'About', link:'/',icon:<FaHome/>}
+        ]} />
       </div>
     </main>
   );
