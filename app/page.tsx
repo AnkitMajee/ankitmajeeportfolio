@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "../components/Hero";
 import { FloatingNav } from "../components/ui/FloatingNavbar";
 import {FaHome} from "react-icons/fa";
+import Grid from "@/components/ui/GridGlobe";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           {name: 'Home', link:'/',icon:<FaHome/>},
           {name: 'About', link:'/',icon:<FaHome/>}
         ]} />
+        <Grid />
       </div>
     </main>
   );
