@@ -8,8 +8,8 @@ const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        My coding journey
+        <span className="text-purple"> and profiles</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -39,6 +39,9 @@ const Clients = () => {
                   width={company.id === 4 || company.id === 5 ? 100 : 150}
                   className="md:w-24 w-20"
                 />
+                {/* <span className="md:w-24 w-20 md:text-lg text-md font-bold svg-text">
+                <span className="path text-fill-transparent stroke-black stroke-1">{company.name}</span>
+                </span> */}
               </div>
             </React.Fragment>
           ))}

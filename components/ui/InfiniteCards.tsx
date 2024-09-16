@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
   items,
-  direction = "left",
-  speed = "fast",
+  direction = "right",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
@@ -111,7 +111,9 @@ export const InfiniteMovingCards = ({
               ></div>
               {/* change text color, text-lg */}
               <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
+              <span className="relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              <iframe src={item.quote} title="Embedded Link"></iframe>
+                </span>
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* add this div for the profile img */}
